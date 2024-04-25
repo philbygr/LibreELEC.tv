@@ -34,6 +34,13 @@
         ;;
     esac
 
+  # additional drivers to install:
+  # for a list of additional drivers see packages/linux-drivers
+  # Space separated list is support https://wiki.libreelec.tv/development-1/build-basicsed,
+  # e.g. ADDITIONAL_DRIVERS="DRIVER1 DRIVER2"
+    ADDITIONAL_DRIVERS+=" RTL8189FS"
+
+
   # Kernel target
     KERNEL_TARGET="zImage"
 
